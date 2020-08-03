@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Covid-19</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Cidade</th>
+                <th>Diferenças de Casos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let i=0; i<cidadeTop10.length; i++) { %> 
+                <tr>
+                    <td><%= cidadeTop10[i].cidade %> </td>
+                    <td name="diferencas"><%= cidadeTop10[i].diferencaCasos %> </td>
+                </tr>
+            <% } %> 
+        </tbody>
+    </table>
+</body>
+</html>
